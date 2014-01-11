@@ -1,0 +1,13 @@
+node_modules
+bower_components
+libs/vendors
+dist
+tmp
+
+*.log
+*.sh
+*.bat
+*.cmd
+.DS_Store
+libs
+media

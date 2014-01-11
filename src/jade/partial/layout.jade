@@ -1,0 +1,32 @@
+doctype 5
+html(lang="%TMPL_LANG%")
+  head
+
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, user-scalable=yes")
+    meta(name="keywords", content="")
+    meta(name="description", content="")
+
+    title= title
+
+    block contentsCSS
+      //- link(rel='stylesheet', href='/assets/scripts/main.css')
+    //- ツイッターとかサイト仕様上ヘッダー内に置かなければならないものはここに
+    //- block headerScript
+
+
+  body
+    #wapper
+      #wrapper-inner
+        include header
+        #main
+          block contents
+        include footer
+
+    //- コンテンツ用スクリプトはここに配置
+    block mainScript
+      script(type="text/javascript", src="#{jsPath}/almond.js")
+      script(type="text/javascript", src="#{jsPath}/vendor.js")
+
+    //- ga 用
+    block ga

@@ -1,0 +1,15 @@
+{
+	"port": 3002,
+	"use_relative_path": false,
+	"DIST": "dist",
+	"ASSET_DIR": "assets",
+	"SCRIPT_DIR": "scripts",
+	"STYLESHEET_DIR": "stylesheets",
+	"IMAGE_DIR": "images",
+
+	"TMP_DIR": "tmp",
+	"SRC": "src",
+	"COFFEE_DIR": "coffee",
+	"STYLUS_DIR": "stylus",
+	"JADE_DIR": "jade"
+}

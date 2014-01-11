@@ -1,0 +1,51 @@
+//global config.
+//共通して使うカラー設定や HTML 的な共通クラスなどを記述する。
+//このファイルの内容は全ファイルに共通して適用される。
+
+//背景色
+$baseColor = #ffffff
+//テキストカラー
+$textColor = #333333
+//ポイント色となる色
+$pointBlue = #0000ff
+
+
+/*
+ 画像置き換え
+ :usage:
+    jade::
+      #some-element
+        a(href="#").ex-image content text...
+    stylus::
+      #some-element
+        .ex-image
+          background-image url('images/some-element-content.png')
+          width 200px
+          padding-top 20px
+*/
+.ex-image
+  height 0
+  display inline-block
+  background-repeat no-repeat
+  background-size 100% auto
+  background-position 0 0
+  overflow hidden
+
+
+/*
+  クリアーフィックス
+  :usage:
+    jade::
+      ul#floating-element-parent.cf
+        li.float-left list1
+        li.float-left list2
+    stylus::
+      #floating-element-parent
+        .float-left
+          float left
+          display block
+*/
+.cf:after
+  display table
+  clear both
+  content ""

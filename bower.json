@@ -1,0 +1,20 @@
+{
+  "name": "thinking-js-model",
+  "version": "0.1.0",
+  "homepage": "https://github.com/glassesfactory/thinking-js-model",
+  "authors": [
+    "Yamaguchi Eikichi <megane@glasses-factory.net>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "zepto": "~1.0.0"
+  }
+}
